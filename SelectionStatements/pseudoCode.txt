@@ -1,0 +1,231 @@
+Problem:
+
+		1 - Input an integer number. If it is greater than 0, find its square.
+			Otherwise find its cube. +++
+
+		2 - Given a value x, calculate y according to the following formula. +++
+
+								-x		if x < 0
+						x -> 	0		if x = 0
+								x^2		if x > 0
+
+				 
+		3 - A student fails a course if s/he takes less than 50 as overall grade.
+			Given the overall grade of a student, display whether s/he passed or
+			failed. +++
+
+		4 - A supermarket offers a 5% discount if your bill is more than 100 YTL
+			Given the customer's id number and bill, display his/her id number with
+			the amount s/he has to pay (including the discount if any) +++
+
+		5 - Calculate the water bill for a customer where the price of water / m^3 
+			is 3 YTL for domestic users and 2.5 YTL for industrial users. Input
+			the user-id consumption (amount of water used), user code 
+			(D - domestic, I - Industrial), and outğut the user-id and the amount
+			to be paid.
+
+
+
+[There will be total six tabs, one main tab and five operational tabs.]
+
+[There will be two version of this program, one with switch cases and other
+with if cases]
+
+
+int main()
+{
+	int iTab; (Intersection between tabs)
+
+	double dNumber (Variable);
+
+	while (iTab != 0)
+	{
+		if (iTab == 1) (Information)
+		{
+			printf(Inform user)
+
+			scanf(Selection  {iTab})
+		}
+
+		
+		// Operational Tabs \\
+
+		else if (iTab == 2)
+		{
+			printf("Tab info")
+
+			scanf(Variable {dNumber})
+
+			if (iNumber > 0)
+			{
+				printf(Result (Square))
+			}
+
+			else
+			{
+				printf(Result (Cube))
+			}
+		}
+
+		else if (iTab == 3)
+		{
+			printf("Tab info")
+
+			scanf(Variable {dNumber})
+
+			if (dNumber < 0)
+			{
+				printf(-dNumber)
+			}
+
+			else if (dNumber = 0)
+			{
+				printf("0");
+			}
+
+			else
+			{
+				printf("dNumber Square")
+			}
+		}
+
+		else if (iTab == 4)
+		{
+			printf("Tab info")
+
+			scanf(Variable {dNumber})
+
+			if (dNumber >= 50)
+			{
+				printf("Passed")
+			}
+
+			else
+			{
+				printf("Failed")
+			}
+		}
+
+		else if (iTab == 5)
+		{
+			int iID; (To store id number)
+
+			printf("Tab info")
+
+			scanf(Variable (Bill), {dNumber})
+
+			printf("Input request")
+
+			scanf(Variable (id), {iID})
+
+			if (dNumber > 100 or dNumber >= 0) (With error prevention)
+			{
+				if (dNumber > 100)
+				{
+					TO DO ---- Calculate %5 discount
+				}
+
+				else
+				{
+					TO DO ---- Print the bill directly with the id number
+				}
+			}
+
+			else
+			{
+				//Looks like there is a mistake\\
+
+				TO DO ---- Warn user about mistakes
+			}
+		}
+
+		else if (iTab == 6)
+		{
+			// There are more possibilities in this tab tha nother tabs, so defining
+			// variables under this tab will be more efficient end much easy to handle
+
+			double dDomestic = 3; (Domestic users)
+
+			double dIndustrial = 2.5; (Industrial users)
+
+
+
+			// To be initialized
+
+			double dConsumption; (To calculate the bill)
+
+			int iID; (To store user ID)
+
+			char cUserClass; (For separation between Industrial and Domestic users)
+
+			
+
+
+			// To specify which plan will be used for calculaton of water consumption according to the user class
+
+			printf("Tab info with user class request")
+
+			scanf(Variable (User Class), {cUserClass})
+
+			while (true)
+			{
+
+				// Domestic Users
+
+				if (cUserClass == 'd' or cUserClass == 'D')
+				{
+					printf("ID requisition")
+
+					scanf(Variable (User ID), {iID})
+
+					printf("Consumption requisition")
+
+					scanf(Variable (Water Consumption), {dConsumption})
+
+
+
+					printf("Result")
+
+					break;
+				}
+
+				// Industrial Users
+
+				else if (cUserClass == 'i' or cUserClass == 'I')
+				{
+					printf("ID requisition")
+
+					scanf(Variable (User ID), {iID})
+
+					printf("Consumption requisition")
+
+					scanf(Variable (Water Consumption), {dConsumption})
+
+
+
+					printf("Result")
+
+					break;
+				}
+
+				// Precaution
+
+				else
+				{
+					printf("Error info")
+				}
+			}
+		}
+
+		// Operational Tabs \\
+
+		
+		else (Warning)
+		{
+			printf(Warn user for any mistake)
+		}
+
+
+		[There will be a function]
+	}
+}
